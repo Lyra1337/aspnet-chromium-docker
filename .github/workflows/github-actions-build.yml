@@ -49,3 +49,11 @@ jobs:
           file: net8.0.Dockerfile
           tags: lyra1337/aspnet-chromium:latest,lyra1337/aspnet-chromium:net8.0
 
+      - name: Build and push net9.0
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          file: net9.0.Dockerfile
+          tags: lyra1337/aspnet-chromium:latest,lyra1337/aspnet-chromium:net9.0
+
